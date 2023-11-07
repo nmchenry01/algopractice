@@ -3,7 +3,7 @@ from typing import List
 
 class Solution:
     @staticmethod
-    def containsDuplicate(nums: List[int]) -> bool:
+    def contains_duplicate(nums: List[int]) -> bool:
         lookup = set()
 
         for i in range(len(nums)):
@@ -16,9 +16,9 @@ class Solution:
     
 class TestSolution(unittest.TestCase):
     def test_containsDuplicate(self):
-        self.assertEqual(Solution.containsDuplicate([1,2,3,1]), True)
-        self.assertEqual(Solution.containsDuplicate([1,2,3,4]), False)
-        self.assertEqual(Solution.containsDuplicate([1]), False)
+        self.assertEqual(Solution.contains_duplicate([1,2,3,1]), True)
+        self.assertEqual(Solution.contains_duplicate([1,2,3,4]), False)
+        self.assertEqual(Solution.contains_duplicate([1]), False)
 
 if __name__ == "__main__":
     unittest.main()
