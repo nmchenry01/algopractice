@@ -5,25 +5,28 @@ from typing import List
 class SolutionOne:
     @staticmethod
     def group_anagrams(strs: List[str]) -> List[List[str]]:
-        # Create a helper function for decomposing each string into its letter count
-        def count_letters(value: str) -> tuple[str, int]:
-            # Creates a dictionary where 0 is the default value
-            result = defaultdict(int)
-            sorted_value = sorted(value)
-            for val in sorted_value:
-                result[val] += 1
+        result_dict = defaultdict(list)
 
-            # A tuple is hashable
-            return tuple(result.items())
+        # Helper function for getting character counts as a tuple
+        def get_char_count(input: str) -> tuple[int, ...]:
+            # Map the letters of the alphabet to index positions
+            result = [0] * 26
 
-        grouped_letters = defaultdict(list)
-        
-        for val in strs:
-            letter_count = count_letters(val)
+            # Using ASCII values, normalize alphabet to 0-25
+            for i in input:
+                result[ord(i) - ord("a")] += 1
 
-            grouped_letters[letter_count].append(val)
+            # Return the result as a hashable tuple (to be used as the key in the result)
+            return tuple(result)
 
-        return list(grouped_letters.values())
+        # Now group all the words
+        for word in strs:
+            char_count = get_char_count(word)
+
+            result_dict[char_count].append(word)
+
+        # Return as a list (values returns an iterator type)
+        return list(result_dict.values())
 
 class TestSolutionOne(unittest.TestCase):
     def test_groupAnagrams(self):

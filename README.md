@@ -43,3 +43,5 @@ For example:
 
 - **Arrays & Hashing**
   - Contains Duplicate (Easy)
+  - Valid Anagram (Easy)
+  - Two Sum (Easy)

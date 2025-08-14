@@ -21,32 +21,16 @@ You can return the answer in any order.
 
 ### Solution Description
 
-Group words that are anagrams by using the frequency of each letter as a unique signature.
-
-How it works:
-
-1. Count Letters:
-  For each word, count how many times each letter appears.
-
-2. Create a Hashable Key:
-  Convert the letter counts into a tuple (which is hashable and can be used as a dictionary key).
-
-3. Group Words:
-  Use a dictionary to group words that share the same letter-count key.
-
-4. Return Groups:
-  Output the grouped anagrams as a list of lists.
-
-Why it works:
-Anagrams have the exact same letter counts, so their tuple keys will match, ensuring they are grouped together.
+Think of each word as a 26-slot “letter counter” where each slot matches a letter’s position from ord(char) - ord('a').
+Words with the same counter (same letters in same counts) share the same tuple key and get grouped together as anagrams.
 
 ### Optimal Time Complexity
 
-O(m*nlog(n)) or O(m * n)
+O(m * n)
 
 m = The number of strings in the input array
 n = The number of letters in each string
 
 ### Optimal Space Complexity
 
-O(n*m)
+O(m)
