@@ -45,3 +45,7 @@ For example:
   - Contains Duplicate (Easy)
   - Valid Anagram (Easy)
   - Two Sum (Easy)
+  - Group Anagrams (Medium)
+  - Top K Frequent Elements (Medium)
+  - Encode & Decode Strings (Medium)
+  - Product of Array Except Self (Medium)
