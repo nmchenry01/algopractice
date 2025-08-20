@@ -49,3 +49,4 @@ For example:
   - Top K Frequent Elements (Medium)
   - Encode & Decode Strings (Medium)
   - Product of Array Except Self (Medium)
+  - Longest Consecutive Sequence (Hard)
