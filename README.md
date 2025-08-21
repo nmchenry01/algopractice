@@ -52,4 +52,5 @@ For example:
   - Longest Consecutive Sequence (Hard)
 
 - **Two Pointers**
-  - Valid Palindrome
+  - Valid Palindrome (Easy)
+  - Three Sum (Medium)
