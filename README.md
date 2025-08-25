@@ -55,3 +55,6 @@ For example:
   - Valid Palindrome (Easy)
   - Three Sum (Medium)
   - Container With Most Water (Medium)
+
+- **Sliding Window**
+  - Best Time to Buy and Sell Stock (Easy)
