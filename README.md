@@ -58,3 +58,4 @@ For example:
 
 - **Sliding Window**
   - Best Time to Buy and Sell Stock (Easy)
+  - Longest Substring Without Repeats (Medium)
