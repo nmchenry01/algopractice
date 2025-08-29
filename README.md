@@ -61,3 +61,6 @@ For example:
   - Longest Substring Without Repeats (Medium)
   - Longest Repeating Substring with Replacement (Medium)
   - Minimum Window Substring (Hard)
+
+- **Stack**
+  - Valid Parentheses (Easy)
