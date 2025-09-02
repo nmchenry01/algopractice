@@ -64,3 +64,7 @@ For example:
 
 - **Stack**
   - Valid Parentheses (Easy)
+
+- **Binary Search**
+  - Binary Search (Easy)
+  - Minimum in Rotated Sorted Array (Medium)
