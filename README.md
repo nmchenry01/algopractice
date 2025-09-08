@@ -68,3 +68,6 @@ For example:
 - **Binary Search**
   - Binary Search (Easy)
   - Minimum in Rotated Sorted Array (Medium)
+
+- **Linked List**
+  - Reverse Linked List (Easy)
